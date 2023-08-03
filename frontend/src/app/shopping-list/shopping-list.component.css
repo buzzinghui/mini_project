@@ -1,0 +1,81 @@
+/* Styles for the header and navigation bar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .navbar-items button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the product list */
+  main {
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product-item {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .product-thumbnail img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .product-details p {
+    margin: 0;
+  }
+  
+  /* Hover effect on product items */
+  .product-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  
+  .rounded-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect */
+  .rounded-button:hover {
+    background-color: #45a049;
+  }

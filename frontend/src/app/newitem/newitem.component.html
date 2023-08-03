@@ -1,0 +1,31 @@
+<!-- create-item.component.html -->
+
+<div class="create-item-container">
+    <h2>Create New Item</h2>
+    <form #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm.value)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="newItem.name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" [(ngModel)]="newItem.description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" [(ngModel)]="newItem.price" required>
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" [(ngModel)]="newItem.stock" required>
+      </div>
+      <!-- <div class="form-group">
+        <label for="thumbnail">Thumbnail:</label>
+        <input type="file" id="thumbnail" name="thumbnail" (change)="onFileChange($event)" accept="image/*" required>
+      </div> -->
+      <div class="form-group">
+        <button type="submit">Create Item</button>
+      </div>
+    </form>
+  </div>
+  

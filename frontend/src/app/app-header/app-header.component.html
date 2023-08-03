@@ -1,0 +1,40 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <div class="container-fluid" text-align: center display='flex'
+  justify-content='center'
+  align-items='center' height="100vh">
+    <!-- <a class="navbar-brand" href="#">Welcome to Hui Li's Shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" display='flex'
+    justify-content='center'
+    align-items='center' height="100vh">
+      <!-- <ul class="nav nav-tabs">
+        <li class="nav-item" routerLinkActive="nav-link active" >
+          <a class="nav-link" routerLink="/homepage">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="nav-link active">
+          <a class="nav-link"  routerLink="/recipes">Cart</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        
+      </ul> -->
+      <form class="d-flex" role="search" text-align: center>
+        <input #myInput class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+        (keyup.enter)="doSearch(myInput.value)" text-align: center>
+        <button text-align: center class="btn btn-outline-success" type="submit" (click)="doSearch(myInput.value)">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,12 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/assignment3
+spring.datasource.username=root
+spring.datasource.password=ten098password
+
+spring.thymeleaf.enabled=true
+
+spring.redis.host=redis-10083.c295.ap-southeast-1-1.ec2.cloud.redislabs.com
+spring.redis.port=10083
+spring.redis.username=default
+spring.redis.password=WNoWAtyJcz5NhYd2pBknHIYfELwa4Nwi
+spring.redis.timeout=60000
+spring.redis.database=1
